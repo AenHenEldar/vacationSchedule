@@ -1,0 +1,170 @@
+body {
+    background-color: #F7F7F7;
+}
+
+.main__wrapper {
+    width: 938px;
+    margin: 50px 100px;
+    position: relative;
+    background-color: #fff;
+    padding: 25px 15px 60px 15px;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-color: #393A3F;
+        top: 0;
+        left: -100px;
+    }
+}
+
+.main__title {
+    padding: 0 16px;
+}
+
+.main__buttons {
+    margin-top: 20px;
+    background-color: #F7F7F7;
+}
+
+.main__board {
+    background-color: #556080;
+    color: #CACACA;
+}
+
+.main__teamlist {
+    background-color: #FFFFFF;
+    color: #556080;
+}
+
+.main__board,
+.main__teamlist {
+    margin: 6px 16px;
+}
+
+.main__chart {
+    margin-top: 20px;
+    position: relative;
+}
+
+.main__chart-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 35px 20px;
+    background-color: #F7F7F7;
+}
+
+
+
+.main__year-switch {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.main__arrow {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.main__arrow-left {
+    margin-right: 8px;
+}
+
+.main__arrow-right {
+    margin-left: 8px;
+}
+
+.main__list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+
+
+.main__item {
+    font-size: 12px;
+    color: #232323;
+    line-height: 12px;
+    text-align: center;
+    margin: 20px auto;
+
+    &:first-child {
+        margin-top: -20px;
+        font-size: 10px;
+    }
+
+    &:not(:first-child) {
+        height: 32px;
+    }
+}
+
+
+
+.main__katy::before {
+    background: url('../src/img/png/photo-2.png') center no-repeat;
+}
+
+.main__ivan::before {
+    background: url('../src/img/png/photo.png') center no-repeat;
+}
+
+.main__ivan,
+.main__katy {
+    text-align: left;
+    position: relative;
+    width: 32px;  
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 910px;
+        left: -39px;
+        bottom: 0;
+        background-color: #F7F7F7;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 50%;
+        left: -40px;
+        top: -5px;
+    }
+}
+
+.main__days {
+    margin: 0 8px 0 24px;
+}
+
+.main__days-number {
+    transform: translateY(7px);
+}
+
+.main__month {
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width: 7px;
+    background-color: #EAF9FF;
+    margin: 4px 0 0 2px;
+
+    &:first-child {
+        margin-left: 16px;
+    }
+}
+
+
+
+// '../src/img/png/photo.png'

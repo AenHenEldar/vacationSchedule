@@ -1,0 +1,23 @@
+.field {
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    padding: 12px 30px;
+    width: 100%;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #FFF;
+    border-radius: 29.5px;
+
+    &::placeholder {
+        color: #000000;
+    }
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 12px;
+    margin-bottom: 8px;
+}
