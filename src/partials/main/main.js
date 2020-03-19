@@ -17,6 +17,12 @@ $(document).ready(function () {
                 lastWeek = lastDay == 0 ? 7 : lastDay,
                 weeks = (daysInMonth(i, year) - firstWeek - lastWeek) / 7 + 1 + (firstWeek ? 1 : 0);
 
+                // minus one column in February 
+
+                if(i == 2) {
+                    weeks--;
+                }
+
             // i == month
             // j == columns
             // itemIndex == month for every team member (row)
@@ -96,7 +102,7 @@ $(document).ready(function () {
                         item.css('background', 'linear-gradient(to bottom ,#1EBEB4 0%, #1EBEB4 20%, #EAF9FF 20%, #EAF9FF 100%)');
                     }
 
-                    // add team member vacation card
+                    // add card
 
                     if(item.css('background-color') != 'rgb(246, 246, 246)') {
 
@@ -105,6 +111,8 @@ $(document).ready(function () {
 
                             // set in card period and column name
                             $(`.main__list:nth-of-type(${i + 2}) .main__item:nth-of-type(${itemIndex}) .main__card-period`).html( (columnPeriodFrom > 9 ? '' : '0') + columnPeriodFrom + '.0' + i + '.' + year + ' - ' + (columnPeriodTo > 9 ? '' : '0') + columnPeriodTo + '.0' + i + '.' + year);
+
+                            // column color in the card
 
                             if(item.css('background-color') == 'rgb(234, 249, 255)') {
                                 $(`.main__list:nth-of-type(${i + 2}) .main__item:nth-of-type(${itemIndex}) .main__column-name`).html('Отпуск');
