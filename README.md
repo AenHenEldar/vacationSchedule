@@ -1,1 +1,1 @@
-https://aenheneldar.github.io/Travel/dist/
+https://aenheneldar.github.io/vacationSchedule/dist/

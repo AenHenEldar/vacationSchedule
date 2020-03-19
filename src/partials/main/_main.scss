@@ -120,7 +120,7 @@ body {
 .main__katy {
     text-align: left;
     position: relative;
-    width: 32px;  
+    width: 32px;
 
     &::after {
         content: '';
@@ -165,6 +165,63 @@ body {
     }
 }
 
+.main__months {
+    position: relative;
 
 
-// '../src/img/png/photo.png'
+}
+
+.main__card {
+    display: none;
+    position: absolute;
+    width: 345px;
+    height: 146px;
+    background: #FFFFFF url('../src/img/png/photo.png') 16px 16px no-repeat;
+    background-size: 54px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0 rgba(107, 107, 107, 0.50);
+    border-radius: 4px;
+    top: 25px;
+    left: 35px;
+    z-index: 99;
+
+    &.active-card {
+        display: block;
+    }
+}
+
+.main__card-name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    margin: 16px 0 0 86px;
+    width: 10px;
+    line-height: 19px;
+}
+
+.main__card-column {
+    display: inline-block;
+    height: 16px;
+    width: 11px;
+    background-color: #EAF9FF;
+    margin: 32px 0 0 -145px;
+}
+
+.main__card-period {
+    display: inline-block;
+    font-size: 14px;
+    color: #000000;
+    margin: 0 0 0 5px;
+}
+
+.main__column-name {
+    font-size: 14px;
+    color: #AEAEAE;
+    margin: 5px 229px 0 0;
+}
+
+
+// display: inline-block;
+//     height: 16px;
+//     width: 7px;
+//     background-color: #EAF9FF;
