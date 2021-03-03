@@ -24,7 +24,7 @@
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-html-loader": "^1.1.5",
     "pug-loader": "https://github.com/pugjs/pug-loader/tarball/master",
     "sass-loader": "^8.0.2",
